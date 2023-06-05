@@ -9,7 +9,8 @@ const videos = [
   // Função para renderizar os vídeos
   function renderizarVideos() {
     const videosContainer = document.getElementById("videos-container");
-  
+    console.log renderizarVideos
+
     // Limpar conteúdo existente
     videosContainer.innerHTML = "";
   
@@ -26,13 +27,6 @@ const videos = [
       videosContainer.appendChild(iframe);
     });
   }
-  
-  // Evento do botão de iluminação
-  const botaoIluminacao = document.getElementById("botao-iluminacao");
-  botaoIluminacao.addEventListener("click", function () {
-    // Lógica para alternar entre light mode e dark mode
-    // Aqui você pode adicionar o código para alternar os estilos CSS
-  });
-  
+   
   // Chamar a função de renderização dos vídeos
   renderizarVideos();
